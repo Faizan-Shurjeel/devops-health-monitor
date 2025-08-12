@@ -4,6 +4,7 @@
 
 # Shuttle / local secrets
 /Secrets.toml
+/Secrets.toml.example
 
 # Env files
 .env
