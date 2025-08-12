@@ -1,0 +1,45 @@
+# Rust / Cargo
+/target/
+**/*.rs.bk
+
+# Shuttle / local secrets
+/Secrets.toml
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+*.pid
+
+# IDE / Editors
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Frontend (if used)
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+out/
+.vercel/
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+
+# Coverage / reports
+coverage/
+.nyc_output/
+coverage*.json
+lcov.info

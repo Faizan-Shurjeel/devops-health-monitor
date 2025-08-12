@@ -1,0 +1,8 @@
+name = "devops-health-monitor"
+
+[deploy]
+# Set to the desired Shuttle environment (e.g., 'prod' or 'staging').
+env = "prod"
+
+[secrets]
+# Provide secrets in Shuttle's secrets manager (locally via 'Secrets.toml').

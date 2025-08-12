@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DevOps Health Monitor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>DevOps Health Monitor</h1>
+      <p>High-performance URL health checks with Rust + Shuttle.rs</p>
+    </header>
+
+    <main>
+      <section class="targets">
+        <h2>Monitored Targets</h2>
+        <ul id="targets-list"></ul>
+      </section>
+
+      <section class="chart">
+        <h2 id="chart-title">Select a target to view metrics</h2>
+        <canvas id="latencyChart" height="120"></canvas>
+        <div class="legend">
+          <span class="dot ok"></span> 2xx/3xx
+          <span class="dot warn"></span> 4xx
+          <span class="dot err"></span> 5xx/timeout
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Backend API URL: <code id="api-base"></code></p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
